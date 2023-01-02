@@ -21,4 +21,20 @@ let depList;
 let numList;
 numList = [1, 2, 3];
 let c = 2 /* Color.blue */;
-// tuples
+// TUPLES
+let swapNumbs;
+function swapNumbers(num1, num2) {
+    return [num2, num1];
+}
+swapNumbs = swapNumbers(10, 20);
+swapNumbs[0];
+swapNumbs[1];
+// ANY
+// can use any datatypes ie. no typesafty features
+let department;
+department = 'IT';
+department = 8487;
+// USE IN FUNCTIONS
+function add(num1, num2, num3 /* Optional parameter */, num4 = 10 /* Required parameter */, ...num5) {
+    return num1 + num2;
+}
