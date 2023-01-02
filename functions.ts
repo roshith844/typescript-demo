@@ -3,3 +3,8 @@ function add (num1 : number, num2 : number, num3 ?: number/* Optional parameter 
 {
 return num1 + num2
 }
+
+function createUser(): {key: string} /* return type object*/{
+     return {key: "value"}
+}
+
