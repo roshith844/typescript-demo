@@ -34,7 +34,3 @@ swapNumbs[1];
 let department;
 department = 'IT';
 department = 8487;
-// USE IN FUNCTIONS
-function add(num1, num2, num3 /* Optional parameter */, num4 = 10 /* Required parameter */, ...num5) {
-    return num1 + num2;
-}

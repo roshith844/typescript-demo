@@ -1,9 +1,10 @@
+"use strict";
 // enums, or enumerated types, are data structures of constant length that hold a set of constant values
 var SeatChoice;
 (function (SeatChoice) {
     SeatChoice[SeatChoice["WINDOW"] = 10] = "WINDOW";
     SeatChoice[SeatChoice["LOWER_BIRTH"] = 30] = "LOWER_BIRTH";
-    SeatChoice[SeatChoice["UPPER_BIRTH"] = 31] = "UPPER_BIRTH"; // will automatically follow incremened values
+    SeatChoice[SeatChoice["UPPER_BIRTH"] = 31] = "UPPER_BIRTH";
 })(SeatChoice || (SeatChoice = {}));
-var userChoice = SeatChoice.WINDOW;
+const userChoice = SeatChoice.WINDOW;
 console.log(userChoice);
