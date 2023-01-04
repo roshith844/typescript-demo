@@ -9,3 +9,35 @@
 // 		displayArray()
 // Display the array values
 
+class Fun{
+     size : number;
+     constructor(size: number){  
+          this.size= size;
+     }
+     main(){
+          // Declare array
+          let array = new Array<number[]>(this.size)
+          for(let i=0; i<this.size; i++){
+               array[i]= new Array(this.size)
+          }
+          return array;
+     }
+
+     getArray(array: number[][]): number[][]{
+          for(let i = 0; i<this.size ; i++){
+               for(let j=0; j<this.size; j++){
+                    array[i][j] = Number(prompt("Enter value"))
+               }
+          }
+          return array;
+     }
+
+     displayArray(array: number[] | number[][]){
+          console.log(array)
+     }
+}
+ let newArrSize = Number(prompt("Enter size Of The Array"))
+let arr = new Fun(newArrSize)
+    let newarr = arr.main()
+ let  arrvalues = arr.getArray(newarr)
+ arr.displayArray(arrvalues)
